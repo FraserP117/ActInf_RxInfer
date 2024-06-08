@@ -1,0 +1,52 @@
+\documentclass{article}
+\usepackage[x11names, svgnames, rgb]{xcolor}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz}
+\usetikzlibrary{snakes,arrows,shapes}
+\usepackage{amsmath}
+%
+%
+
+%
+
+%
+
+\begin{document}
+\pagestyle{empty}
+%
+%
+%
+
+\enlargethispage{100cm}
+% Start of code
+\begin{tikzpicture}[>=latex',line join=bevel,]
+%%
+\node (θ_1) at (160.23bp,146.84bp) [draw,circle] {θ\_1};
+  \node (Beta_6) at (109.48bp,215.2bp) [draw,fill=lightgray,regular polygon, regular polygon sides=4] {Beta\_6};
+  \node (Bernoulli_8) at (232.82bp,187.48bp) [draw,fill=lightgray,regular polygon, regular polygon sides=4] {Bernoulli\_8};
+  \node (Bernoulli_10) at (209.55bp,80.774bp) [draw,fill=lightgray,regular polygon, regular polygon sides=4] {Bernoulli\_10};
+  \node (Bernoulli_12) at (100.17bp,89.324bp) [draw,fill=lightgray,regular polygon, regular polygon sides=4] {Bernoulli\_12};
+  \node (constvar_2_3) at (116.04bp,295.36bp) [draw,circle] {constvar\_2\_3};
+  \node (constvar_4_5) at (31.257bp,233.37bp) [draw,circle] {constvar\_4\_5};
+  \node (y_7) at (301.29bp,224.06bp) [draw,circle] {y\_7};
+  \node (y_9) at (254.72bp,18.0bp) [draw,circle] {y\_9};
+  \node (y_11) at (45.777bp,33.951bp) [draw,circle] {y\_11};
+  \draw [] (θ_1) ..controls (141.84bp,171.6bp) and (131.55bp,185.47bp)  .. (Beta_6);
+  \draw [] (θ_1) ..controls (184.9bp,160.65bp) and (196.3bp,167.03bp)  .. (Bernoulli_8);
+  \draw [] (θ_1) ..controls (176.28bp,125.33bp) and (182.54bp,116.95bp)  .. (Bernoulli_10);
+  \draw [] (θ_1) ..controls (141.68bp,129.07bp) and (135.02bp,122.69bp)  .. (Bernoulli_12);
+  \draw [] (constvar_2_3) ..controls (112.65bp,253.94bp) and (111.75bp,242.94bp)  .. (Beta_6);
+  \draw [] (constvar_4_5) ..controls (71.507bp,224.02bp) and (82.047bp,221.57bp)  .. (Beta_6);
+  \draw [] (y_7) ..controls (277.59bp,211.4bp) and (267.95bp,206.25bp)  .. (Bernoulli_8);
+  \draw [] (y_9) ..controls (239.73bp,38.823bp) and (234.66bp,45.874bp)  .. (Bernoulli_10);
+  \draw [] (y_11) ..controls (62.661bp,51.139bp) and (67.61bp,56.176bp)  .. (Bernoulli_12);
+%
+\end{tikzpicture}
+% End of code
+
+%
+\end{document}
+%
+
+
+

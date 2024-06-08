@@ -1,0 +1,132 @@
+\documentclass{article}
+\usepackage[x11names, svgnames, rgb]{xcolor}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz}
+\usetikzlibrary{snakes,arrows,shapes}
+\usepackage{amsmath}
+%
+%
+
+%
+
+%
+
+\begin{document}
+\pagestyle{empty}
+%
+%
+%
+
+\enlargethispage{100cm}
+% Start of code
+% \begin{tikzpicture}[anchor=mid,>=latex',line join=bevel,]
+\begin{tikzpicture}[>=latex',line join=bevel,]
+  \pgfsetlinewidth{1bp}
+%%
+\pgfsetcolor{black}
+  % Edge: θ_1 -- Beta_6
+  \draw [] (166.08bp,192.06bp) .. controls (163.48bp,205.98bp) and (159.88bp,225.3bp)  .. (157.24bp,239.43bp);
+  % Edge: θ_1 -- Bernoulli_8
+  \draw [] (172.77bp,156.33bp) .. controls (174.79bp,145.52bp) and (177.41bp,131.57bp)  .. (179.67bp,119.55bp);
+  % Edge: θ_1 -- Bernoulli_10
+  \draw [] (152.21bp,168.76bp) .. controls (142.3bp,165.57bp) and (129.58bp,161.47bp)  .. (118.25bp,157.82bp);
+  % Edge: θ_1 -- Bernoulli_12
+  \draw [] (187.41bp,175.42bp) .. controls (198.19bp,176.08bp) and (212.12bp,176.94bp)  .. (224.33bp,177.7bp);
+  % Edge: constvar_2_3 -- Beta_6
+  \draw [] (178.89bp,300.22bp) .. controls (174.2bp,292.34bp) and (169.17bp,283.9bp)  .. (164.86bp,276.66bp);
+  % Edge: constvar_4_5 -- Beta_6
+  \draw [] (115.68bp,288.88bp) .. controls (122.12bp,283.67bp) and (128.96bp,278.13bp)  .. (135.04bp,273.2bp);
+  % Edge: y_7 -- Bernoulli_8
+  \draw [] (198.04bp,35.853bp) .. controls (195.86bp,45.164bp) and (193.15bp,56.733bp)  .. (190.74bp,67.047bp);
+  % Edge: y_9 -- Bernoulli_10
+  \draw [] (34.746bp,126.92bp) .. controls (42.828bp,130.1bp) and (52.747bp,134.01bp)  .. (61.951bp,137.64bp);
+  % Edge: y_11 -- Bernoulli_12
+  \draw [] (312.08bp,180.37bp) .. controls (302.76bp,180.23bp) and (291.17bp,180.05bp)  .. (280.69bp,179.88bp);
+  % Node: θ_1
+\begin{scope}
+  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \draw (169.4bp,174.3bp) ellipse (18.0bp and 18.0bp);
+  \draw (169.4bp,174.3bp) node {θ\_1};
+\end{scope}
+  % Node: Beta_6
+\begin{scope}
+  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \definecolor{fillcol}{rgb}{0.83,0.83,0.83};
+  \pgfsetfillcolor{fillcol}
+  \filldraw (172.27bp,276.53bp) -- (135.27bp,276.53bp) -- (135.27bp,239.53bp) -- (172.27bp,239.53bp) -- cycle;
+  \draw (153.77bp,258.03bp) node {Beta\_6};
+\end{scope}
+  % Node: Bernoulli_8
+\begin{scope}
+  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \definecolor{fillcol}{rgb}{0.83,0.83,0.83};
+  \pgfsetfillcolor{fillcol}
+  \filldraw (210.58bp,119.33bp) -- (158.58bp,119.33bp) -- (158.58bp,67.33bp) -- (210.58bp,67.33bp) -- cycle;
+  \draw (184.58bp,93.333bp) node {Bernoulli\_8};
+\end{scope}
+  % Node: Bernoulli_10
+\begin{scope}
+  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \definecolor{fillcol}{rgb}{0.83,0.83,0.83};
+  \pgfsetfillcolor{fillcol}
+  \filldraw (118.2bp,176.78bp) -- (62.2bp,176.78bp) -- (62.2bp,120.78bp) -- (118.2bp,120.78bp) -- cycle;
+  \draw (90.203bp,148.78bp) node {Bernoulli\_10};
+\end{scope}
+  % Node: Bernoulli_12
+\begin{scope}
+  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \definecolor{fillcol}{rgb}{0.83,0.83,0.83};
+  \pgfsetfillcolor{fillcol}
+  \filldraw (280.43bp,207.44bp) -- (224.43bp,207.44bp) -- (224.43bp,151.44bp) -- (280.43bp,151.44bp) -- cycle;
+  \draw (252.43bp,179.44bp) node {Bernoulli\_12};
+\end{scope}
+  % Node: constvar_2_3
+\begin{scope}
+  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \draw (194.92bp,327.14bp) ellipse (31.02bp and 31.02bp);
+  \draw (194.92bp,327.14bp) node {constvar\_2\_3};
+\end{scope}
+  % Node: constvar_4_5
+\begin{scope}
+  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \draw (91.38bp,308.56bp) ellipse (31.02bp and 31.02bp);
+  \draw (91.384bp,308.56bp) node {constvar\_4\_5};
+\end{scope}
+  % Node: y_7
+\begin{scope}
+  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \draw (202.21bp,18.0bp) ellipse (18.0bp and 18.0bp);
+  \draw (202.21bp,18.0bp) node {y\_7};
+\end{scope}
+  % Node: y_9
+\begin{scope}
+  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \draw (18.0bp,120.32bp) ellipse (18.0bp and 18.0bp);
+  \draw (18.0bp,120.32bp) node {y\_9};
+\end{scope}
+  % Node: y_11
+\begin{scope}
+  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \draw (330.09bp,180.66bp) ellipse (18.0bp and 18.0bp);
+  \draw (330.09bp,180.66bp) node {y\_11};
+\end{scope}
+%
+\end{tikzpicture}
+% End of code
+
+%
+\end{document}
+%
+
+
+

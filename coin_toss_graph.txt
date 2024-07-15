@@ -1,0 +1,26 @@
+dot"""
+graph G {
+    layout=neato;
+    size="6.0,6.0!";
+    node [shape=circle, fontsize=7];
+    "θ_1" [shape=circle];
+    "constvar_2" [shape=circle];
+    "constvar_3" [shape=circle];
+    "Beta_4" [shape=square, style=filled, fillcolor=lightgray];
+    "y_5" [shape=circle];
+    "Bernoulli_6" [shape=square, style=filled, fillcolor=lightgray];
+    "y_7" [shape=circle];
+    "Bernoulli_8" [shape=square, style=filled, fillcolor=lightgray];
+    "y_9" [shape=circle];
+    "Bernoulli_10" [shape=square, style=filled, fillcolor=lightgray];
+    "θ_1" -- "Beta_4" [len=1.0];
+    "θ_1" -- "Bernoulli_6" [len=1.0];
+    "θ_1" -- "Bernoulli_8" [len=1.0];
+    "θ_1" -- "Bernoulli_10" [len=1.0];
+    "constvar_2" -- "Beta_4" [len=1.0];
+    "constvar_3" -- "Beta_4" [len=1.0];
+    "y_5" -- "Bernoulli_6" [len=1.0];
+    "y_7" -- "Bernoulli_8" [len=1.0];
+    "y_9" -- "Bernoulli_10" [len=1.0];
+}
+"""

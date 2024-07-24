@@ -1,0 +1,34 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usepackage{amsmath}
+\usetikzlibrary{graphdrawing}
+\usegdlibrary{layered}
+\begin{document}
+\begin{tikzpicture}[graph drawing]
+    \graph [layered layout] {
+        % Define nodes
+        theta [label={$ \theta $}];
+        a [label={$ a $}];
+        b [label={$ b $}];
+        y7 [label={$ y_7 $}];
+        y9 [label={$ y_9 $}];
+        y11 [label={$ y_{11} $}];
+        Beta [label={$ \mathcal{B}eta $}];
+        Ber1 [label={$ \mathcal{B}er $}];
+        Ber2 [label={$ \mathcal{B}er $}];
+        Ber3 [label={$ \mathcal{B}er $}];
+
+        % Define edges
+        theta -- Beta;
+        theta -- Ber1;
+        theta -- Ber2;
+        theta -- Ber3;
+        a -- Beta;
+        b -- Beta;
+        y7 -- Ber1;
+        y9 -- Ber2;
+        y11 -- Ber3;
+    };
+\end{tikzpicture}
+\end{document}
+
